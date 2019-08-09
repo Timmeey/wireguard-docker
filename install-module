@@ -1,3 +1,2 @@
 #!/bin/bash
-
-apt install -y wireguard-dkms
+apt-get install libmnl-dev libelf-dev linux-headers-$(uname -r) build-essential pkg-config
