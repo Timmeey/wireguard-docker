@@ -8,7 +8,7 @@ In my use case, I'm running the wireguard docker image on a free-tier Google Clo
 
 ## Build
 ```
-docker build -t wireguard:local github.com/cmulk/wireguard-docker
+docker build -t wireguard:local github.com/Timmeey/wireguard-docker github.com/cmulk/wireguard-docker
 ```
 
 ## Run

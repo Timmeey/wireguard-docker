@@ -1,6 +1,10 @@
-FROM debian:stable
+FROM ubuntu:18.04
 
 RUN apt update && \
+ apt install iproute2 -y && \
+ apt install software-properties-common -y && \
+ add-apt-repository ppa:wireguard/wireguard -y && \
+ apt update  && \
  apt install -y --no-install-recommends wireguard-tools iptables nano net-tools && \
  apt clean
 
